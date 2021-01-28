@@ -2,18 +2,21 @@ import { useState } from 'react';
 
 function Header(props) {
   return (
-    <>
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-evenly',
-        }}
-      >
-        <b>Header</b>
-        <div>✅ firstname is: {props.firstName} </div>
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+      }}
+    >
+      <b>Header</b>
+      <div>
+        <span role="img" aria-label="">
+          ✅
+        </span>{' '}
+        firstname is: {props.firstName}{' '}
       </div>
-    </>
+    </div>
   );
 }
 

@@ -2,18 +2,21 @@ import { useState } from 'react';
 
 function Header() {
   return (
-    <>
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-evenly',
-        }}
-      >
-        <b>Header</b>
-        <div>💥 Cannot access `firstName`</div>
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+      }}
+    >
+      <b>Header</b>
+      <div>
+        <span role="img" aria-label="">
+          💥
+        </span>{' '}
+        Cannot access `firstName`
       </div>
-    </>
+    </div>
   );
 }
 
