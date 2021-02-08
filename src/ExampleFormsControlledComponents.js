@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 export default function ExampleFormsControlledComponents() {
   // Controlled Components #1: State variables
+  const [darkMode, setDarkMode] = useState(false);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
 
@@ -37,11 +38,26 @@ export default function ExampleFormsControlledComponents() {
           value={lastName}
         />
       </label>
+      <label>
+        Dark Mode{' '}
+        <input
+          type="checkbox"
+          // Controlled Components #2: onChange of form element
+          // (including using the `setDarkMode` setter function)
+          onChange={(event) => {
+            // For the checkboxes, we use .checked instead of .value
+            setDarkMode(event.currentTarget.checked);
+          }}
+          // Controlled Components #3: Set the value to the state variable
+          checked={darkMode}
+        />
+      </label>
       <h2>User Profile Preview</h2>
       <b>First name:</b> {firstName}
       <br />
       <b>Last name:</b> {lastName}
       <br />
+      <b>Dark mode:</b> {darkMode === false ? 'off' : 'on'}
     </div>
   );
 }
