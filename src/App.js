@@ -11,6 +11,7 @@ import ExampleMapping from './ExampleMapping';
 import ExampleProps from './ExampleProps';
 import ExamplePropTypes from './ExamplePropTypes';
 import ExampleStateArrays from './ExampleStateArrays';
+import ExampleStateArraysOfObjects from './ExampleStateArraysOfObjects';
 import ExampleStateCounter from './ExampleStateCounter';
 import ExampleStyling from './ExampleStyling';
 import ExampleTernaries from './ExampleTernaries';
@@ -41,6 +42,7 @@ function App() {
       <ExampleFetchingOnLoad />
       <ExampleFetchingOnUpdate />
       <ExampleStateArrays />
+      <ExampleStateArraysOfObjects />
       <ExampleDerivingState />
       <ExampleTernaries />
       <br />
