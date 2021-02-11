@@ -30,7 +30,31 @@ export default function ExampleLocalStorage() {
         value={username}
       />
 
-      <p>Complex Value from Local Storage: {}</p>
+      <p>Complex Value from Local Storage:</p>
+
+      <p>
+        Note: this example only works on refresh, because I didn't add the
+        useState and useEffect like in the other example above
+      </p>
+
+      <div>id: {JSON.parse(localStorage.vegetable).id}</div>
+      <div>name: {JSON.parse(localStorage.vegetable).name}</div>
+
+      <button
+        onClick={() =>
+          (localStorage.vegetable = JSON.stringify({ id: 0, name: 'lettuce' }))
+        }
+      >
+        Lettuce
+      </button>
+
+      <button
+        onClick={() =>
+          (localStorage.vegetable = JSON.stringify({ id: 1, name: 'carrot' }))
+        }
+      >
+        Carrot
+      </button>
     </>
   );
 }
