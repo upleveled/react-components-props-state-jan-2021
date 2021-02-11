@@ -7,6 +7,7 @@ import ExampleDerivingState from './ExampleDerivingState';
 import ExampleFetchingOnLoad from './ExampleFetchingOnLoad';
 import ExampleFetchingOnUpdate from './ExampleFetchingOnUpdate';
 import ExampleFormsControlledComponents from './ExampleFormsControlledComponents';
+import ExampleLocalStorage from './ExampleLocalStorage';
 import ExampleMapping from './ExampleMapping';
 import ExampleProps from './ExampleProps';
 import ExamplePropTypes from './ExamplePropTypes';
@@ -45,6 +46,7 @@ function App() {
       <ExampleStateArraysOfObjects />
       <ExampleDerivingState />
       <ExampleTernaries />
+      <ExampleLocalStorage />
       <br />
       <br />
       <br />
