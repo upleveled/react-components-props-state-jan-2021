@@ -4,11 +4,15 @@ export default function ExampleLocalStorage() {
   // 1. Initialize state variable with initial value of
   // the variable from the local stoage
   const [username, setUsername] = useState(localStorage.username);
+  // Another way of getting local storage
+  // localStorage.getItem('username')
 
   // 3. Any time that the state variable is updated,
   // we also synchronize this value to the local storage
   useEffect(() => {
     localStorage.username = username;
+    // Another way of setting local storage
+    // localStorage.setItem('username', username)
   }, [username]);
 
   return (
